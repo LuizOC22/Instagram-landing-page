@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+body { 
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+}
+
+.caixa {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 32%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 350px;
+    padding: 2rem 0;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.group:nth-child(1) {
+    min-height: 20rem;
+}
+
+#login, #senha {
+    background-color: #fafafa;
+    height: 40px;
+    margin: 6px 0;
+    min-width: 100%;
+    border: 0;
+}
+
+.may {
+    margin: 10px 0;
+    color: #8e8e8e;
+}
+
+#btn {
+    background-color: rgba(0, 149, 246, 3);
+    color: #ffffff;
+    width: 84%;
+    border-radius: 3px;
+}
+
+input {
+    padding: 10px 4px;
+    border: 0;
+}
+
+a {
+    color: #00376b;
+}
+
+.face {
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.cadastro {
+    color: #0095f6;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+
+.celular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.celular img {
+    height: 50rem;
+}
+
+@media(max-width: 1024px){
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 620px){
+    .container {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .group {
+        border: transparent;
+    }
+
+    .celular {
+        display: none;
+    }
+
+    #login, #senha {
+        width: 150px;
+    }
+
+
+}
